@@ -1,21 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Manager</title>
+  </head>
 
-</head>
-<body>
+  <body>
     <button onclick="addTask()">Add</button>
     <table id="taskList">
-        <tr>
-            <th></th>
-            <th>Name</th>
-            <th>Date</th>
-            <th>Description</th>
-        </tr>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>hour</th>
+        <th>Description</th>
+      </tr>
     </table>
-</body>
-<script src="main.js"></script>
+    
+    <div>
+      Reset at <input type="time" id="resetTime" value="00:00" />
+    </div>
+    <button onclick="resetTasks()">Reset</button>
+    <button id="notifyButton">Enable Notifications</button>
+  </body>
+  <script src="main.js"></script>
 </html>
